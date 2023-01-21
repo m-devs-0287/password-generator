@@ -1,0 +1,100 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Ubuntu", sans-serif;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  overflow: hidden;
+  background-image: url("https://wallpapercave.com/wp/gL10Jkh.jpg");
+  background-size: cover;
+}
+
+h1 {
+  color: white;
+}
+
+.container {
+  padding: 2rem 1rem;
+  border-radius: 10px;
+  background: rgb(255, 255, 255);
+  box-shadow: 2px 2px 5px rgba(68, 68, 68, 0.301),
+    -2px -2px 5px rgba(68, 68, 68, 0.301);
+}
+
+.results-container {
+  background-color: rgba(185, 185, 185, 0.4);
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  font-size: 18px;
+  letter-spacing: 1px;
+  padding: 12px 10px;
+  height: 50px;
+  width: 100%;
+  border-radius: 5px;
+  position: relative;
+}
+
+.results-container #result {
+  word-wrap: break-word;
+  max-width: calc(100% - 40px);
+}
+
+.results-container .btn {
+  position: absolute;
+  right: 5px;
+}
+
+.btn {
+  border: none;
+  background-color: #3b3b98;
+  color: #fff;
+  font-size: 1rem;
+  padding: 8px 12px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.btn-large {
+  display: block;
+  width: 100%;
+}
+
+.settings {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 15px 0;
+}
+
+.generator-message {
+  position: absolute;
+  top: 0;
+  color: #fff;
+  padding: 1rem;
+  font-size: 2rem;
+  display: block;
+  text-align: center;
+  display: block;
+  opacity: 0;
+  letter-spacing: -10px;
+}
+
+.generator-message.active {
+  transition: all .5s ease-in-out;
+  opacity: 1;
+  letter-spacing: 3px;
+  top: 0;
+}
+
+.generator-message i {
+  display: block;
+}
